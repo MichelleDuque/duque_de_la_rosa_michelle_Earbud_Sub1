@@ -1,6 +1,6 @@
 # Earbuds Promo Site
 
-Promotional Site of Earbuds which features interactive informational hot spots, the initial earbud was created using Cinema 4D Cinema 4D to model, texture, light, and animate the design.
+Promotional Site of Earbuds which features interactive informational hot spots, the initial earbud was created using Cinema 4D to model, texture, light, and animate the design.
 
 ## Contributing
 
