@@ -2,15 +2,16 @@ model-viewer {
   width: auto;
   max-width: 1200px;
   height: 700px;
-  background-color: #efefef;
+  background: #B4453A;
+  background: linear-gradient(90deg, rgb(180, 102, 58) 0%, rgb(253, 29, 29) 50%, rgb(252, 176, 69) 100%);
   margin: 0 auto;
 }
 
 .Hotspot {
   background: url(../images/hotspot.svg) center no-repeat;
   border: 0px;
-  width: 45px;
-  height: 38px;
+  width: 50px;
+  height: 50px;
   display: none;
   transition: all 1s ease-in-out;
 }
@@ -27,7 +28,6 @@ model-viewer {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
   color: rgba(0, 0, 0, 0.8);
   display: block;
-  font-family: Futura, Helvetica Neue, sans-serif;
   font-size: 18px;
   font-weight: 700;
   left: calc(100% + 1em);
@@ -44,11 +44,13 @@ model-viewer {
   color: #333;
   line-height: 22px;
   font-weight: 300;
+  font-family: "Cardo", serif;
 }
 
 .HotspotAnnotation h2 {
   font-size: 18px;
   margin-bottom: 5px;
+  font-family: "Oswald", sans-serif;
 }
 
 model-viewer::part(default-progress-bar) {
