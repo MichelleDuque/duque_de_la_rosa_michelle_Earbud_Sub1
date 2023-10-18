@@ -1,2 +1,10 @@
 @use 'fonts';
 
+$primary-color: #CF0A0A;
+$secondary-color: #000000;
+$background-color: #B4453A;
+$background-color-degrade: linear-gradient(90deg, rgba(180,102,58,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+$heading-font-family: 'Oswald', sans-serif;
+$body-font-family: 'Cardo', serif;
+$base-font-size: 18px;
+$base-font-weight: 400;
