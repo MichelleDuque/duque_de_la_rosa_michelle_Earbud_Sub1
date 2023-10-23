@@ -4,10 +4,14 @@
     <title>Rock EarBuds</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/main.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet"> 
+    <title>Earbuds</title>
+    <link href="css/main.css" rel="stylesheet">
   </head>
   <body>
-    <model-viewer id="model" src="model/earpodar.gltf" ar ar-modes="webxr scene-viewer quick-look" ios-src="model/earbuds.usdz" camera-controls poster="images/poster.webp" shadow-intensity="1" environment-image="images/aircraft_workshop_01_1k.hdr" exposure="1.7" camera-orbit="52.34deg 88.29deg 874.8m" field-of-view="30deg">
+    <model-viewer id="model" src="model/earpodar.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="images/poster.webp" shadow-intensity="1" environment-image="images/aircraft_workshop_01_1k.hdr" exposure="1.7" camera-orbit="52.34deg 88.29deg 874.8m" field-of-view="30deg">
 
       <button class="Hotspot" slot="hotspot-1" data-position="-0.35684146431410635m 0.4484638797395864m 0.19529437420565557m" data-normal="-0.2214895729103947m 0.0638100264421356m 0.9730727874200497m" data-visibility-attribute="visible">
         <div class="HotspotAnnotation" id="hotspot-1"></div>
@@ -32,7 +36,7 @@
         View in your space
     </button>
       <div id="ar-prompt">
-          <img src="images/ar_hand_prompt.png">
+          <img src="images/ar_hand_prompt.png" alt="Arm holding a cellphone">
       </div>
     </model-viewer>  
     <!-- Loads <model-viewer> for browsers: -->
