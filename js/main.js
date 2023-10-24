@@ -1,6 +1,7 @@
 (() => {
     //console.log("IIFE Fired");
     //variables
+
     const model = document.querySelector("#model");
     const hotspots = document.querySelectorAll(".Hotspot");
   
@@ -50,7 +51,8 @@
         selected.appendChild(textItem);
 
         imageContent.classList.add("image-content");
-  
+
+
       // Texcontent
       // Appendchild
   
@@ -76,7 +78,8 @@
       let selected = document.querySelector(`#${this.slot}`);
       gsap.to(selected, 1, { autoAlpha: 0 });
     }
-  
+
+
     //Event Listener
     model.addEventListener("load", modelLoaded);
   
@@ -84,6 +87,20 @@
       hotspot.addEventListener("mouseover", showInfo);
       hotspot.addEventListener("mouseout", hideInfo);
     });
-  })();
+
+    //Add animation to Text
+
+    let tl = new TimelineMax();
+
+      tl.staggerFromTo(
+        "#title",
+        1.2,
+        { opacity: 0, x: 300, ease: Back.easeOut.config(5)},
+        { opacity: 2, x: 0},
+        1
+      );
+
+
+})();
   
   // In this version, the event listeners use regular functions instead of arrow functions, so the "this" keyword inside the event listeners will refer to the DOM element that triggered the event.
