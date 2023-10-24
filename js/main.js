@@ -7,17 +7,20 @@
     const infoBoxes = [{
       title: "Noise-cancelling speakers" ,
       text: "Great wireless earbuds are increasingly being made with active noise reduction as a meanly feature, it will generate can a more tranquil environment and makes your favorite music easier to listen.",
-    //   image: "images/path"
+      image:"images/image1.jpg"
     }
     ,{
         title: "Rock and Roll All Night - Logo",
-        text: "Rock Revolution Logo, after all you should show how passionate you are for you favorite music genre."
+        text: "Rock Revolution Logo, after all you should show how passionate you are for you favorite music genre.",
+        image:"images/image2.png"
     },{
       title: "The Most Comfortable Earbuds Base",
-      text:"With Rock Revolution you have variety of options, with five different sets of ear tips in varying sizes so you can choose the one that fits better for you."
+      text:"With Rock Revolution you have variety of options, with five different sets of ear tips in varying sizes so you can choose the one that fits better for you.",
+      image:"images/image3.png"
     },{
       title: "The Best Sound",
-      text: "It is like you are in a soundstage, Rock Revolution Earbuds includes features where you can adjust your sound levels."
+      text: "It is like you are in a soundstage, Rock Revolution Earbuds includes features where you can adjust your sound levels.",
+      image:"images/image4.jpg"
     }
   ]
   
@@ -34,14 +37,19 @@
       infoBoxes.forEach((infoBox, index) => {
         let selected = document.querySelector(`#hotspot-${index+1}`);
         // console.log(selected);
+        const imageContent = document.createElement("img");
         const titleItem = document.createElement("h2");
         const textItem = document.createElement("p");
   
+        imageContent.src = infoBox.image;
         titleItem.textContent = infoBox.title;
         textItem.textContent = infoBox.text;
   
+        selected.appendChild(imageContent)
         selected.appendChild(titleItem);
         selected.appendChild(textItem);
+
+        imageContent.classList.add("image-content");
   
       // Texcontent
       // Appendchild
